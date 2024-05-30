@@ -1,0 +1,370 @@
+
+.header {
+  padding: 1.125em 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.list .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 3em 0;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: var(--main-border-rad);
+  -webkit-border-radius: var(--main-border-rad);
+  -moz-border-radius: var(--main-border-rad);
+  -ms-border-radius: var(--main-border-rad);
+  -o-border-radius: var(--main-border-rad);
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.card .info {
+  padding: 1em 1em 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  border: 1px solid transparent;
+  border-width: 0 0 1px 0;
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0), var(--gold-color), rgba(255, 255, 255, 0));
+  border-image-slice: 1;
+}
+
+.card .info h3 {
+  font-size: 1.015rem;
+  margin-bottom: 1em;
+}
+
+.card .info p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 100;
+}
+
+.rating {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card .info .rating {
+  margin-block: .85rem;
+  justify-content: space-between;
+}
+
+.card .info .rating p {
+  flex-grow: 1;
+}
+
+.card .link {
+  padding: 1.5em 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .link i {
+  color: var(--gold-color);
+}
+
+.card:hover .link i {
+  animation: bouncing-right 1s infinite;
+  -webkit-animation: bouncing-right 1s infinite;
+}
+
+
+.card-details .container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3em;
+}
+
+.card-details .image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+
+.card-details .image-container img {
+  border-radius: var(--main-border-rad);
+  -webkit-border-radius: var(--main-border-rad);
+  -moz-border-radius: var(--main-border-rad);
+  -ms-border-radius: var(--main-border-rad);
+  -o-border-radius: var(--main-border-rad);
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.card-details .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.btn {
+  padding: .75em 1.125em;
+  font-size: 1rem;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  color: var(--main-font-color);
+  border: 1px solid var(--gold-color);
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+.add-btn {
+  background-color: transparent;
+  padding: .75em 1.75em;
+  background-color: rgb(32, 186, 32);
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.card-details .delete-btn {
+  background-color: rgb(135, 17, 17);
+  margin: 2em 0;
+}
+
+.card-details .update-btn,
+.save-btn {
+  background-color: rgb(32, 186, 32);
+  margin: 2em 0;
+}
+
+.save-btn {
+  margin: 2em auto;
+  display: block;
+  width: fit-content;
+}
+
+.btn i {
+  margin-right: 10px;
+  color: var(--gold-color);
+}
+
+
+.card-details .details {
+  background-color: rgba(255, 255, 255, 0.02);
+  border-radius: var(--main-border-rad);
+  -webkit-border-radius: var(--main-border-rad);
+  -moz-border-radius: var(--main-border-rad);
+  -ms-border-radius: var(--main-border-rad);
+  -o-border-radius: var(--main-border-rad);
+  padding: 1.125em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: .75rem;
+  min-width: 350px;
+  border: 1px solid var(--gold-color);
+  align-self: flex-start;
+}
+
+.card-details .details > div {
+  display: flex;
+  align-items: center;
+}
+
+.card-details .details > div label:first-child{
+  font-weight: bold;
+}
+
+.card-details .details.editable > div label:first-child {
+  width: 35%;
+}
+
+.card-details .details > div > :nth-child(2) {
+  color: rgba(255, 255, 255, 0.7);
+  flex: 1;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+.card-details .details.editable > div > :nth-child(2):not(.rating) {
+  border-bottom: 1px solid var(--gold-color);
+  padding: 0.5em;
+}
+
+.card-details .details.editable .rating {
+  padding: 0.5em;
+}
+
+.card-details .details > div .textarea {
+  overflow: hidden;
+  word-wrap: break-word;
+  text-wrap:wrap;
+}
+
+
+.drop-down {
+  position: relative;
+  display: flex;
+  transition: 0.3s;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 300px;
+}
+
+.drop-down:not(.disabled) {
+  cursor: pointer;
+  padding: 0.5em;
+  border: 1px solid var(--gold-color) !important;
+}
+
+
+.drop-down .list {
+  display: none;
+}
+
+.drop-down.active .list {
+  list-style: none;
+  display: grid;
+  gap: .125rem;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(calc(100% + 10px));
+  left: 0;
+  right: 0;
+  background-image: var(--main-grad);
+  -webkit-transform: translateY(calc(100% + 10px));
+  -moz-transform: translateY(calc(100% + 10px));
+  -ms-transform: translateY(calc(100% + 10px));
+  -o-transform: translateY(calc(100% + 10px));
+  z-index: 1;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.drop-down .list::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.drop-down .list::-webkit-scrollbar-thumb {
+  background-color: var(--gold-color);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.drop-down .list li {
+  border-bottom: 1px solid var(--gold-color);
+  padding: .5em;
+}
+
+.drop-down i {
+  color: var(--gold-color);
+  padding: .5em;
+
+}
+
+.pagination {
+  margin: 3em auto;
+  text-align: center;
+}
+
+.pagination button {
+    padding: 0.5em 0.7em;
+    background-color: transparent;
+    color: white;
+    border: 1px solid var(--gold-color);
+    cursor: pointer;
+}
+
+.pagination button:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.pagination button:last-child {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.pagination .active {
+  background-color: var(--gold-color);
+  font-weight: bold;
+}
+
+@keyframes bouncing-right {
+  0%, 20%, 50%, 60%, 80% {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+  40%, 60%{
+    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+}
+}
