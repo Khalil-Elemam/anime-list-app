@@ -1,4 +1,4 @@
 [[redirects]]
 from="/*"
-to="{base URL of your site}"
+to="{https://anime-cards.netlify.app/}"
 status=200
