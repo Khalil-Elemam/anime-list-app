@@ -13,7 +13,7 @@ import java.io.IOException;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/anime")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "${CORS_ALLOWED_ORIGINS}")
 public class AnimeController {
 
     private final AnimeService animeService;
