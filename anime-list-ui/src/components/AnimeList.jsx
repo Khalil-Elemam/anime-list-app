@@ -16,6 +16,7 @@ export default function AnimeList() {
         async function fetchData() {
             try {
                 const data = (await getAnimeCards(currentPage - 1, 9)).data
+                console.log(data)
                 setCards(data.content)
                 setPagesNum(data.totalPages)
             }catch(error) {
