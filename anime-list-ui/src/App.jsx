@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Layout />}>
-          <Route index='.' element={<AnimeList />} />
+          <Route index element={<AnimeList />} />
           <Route path='card/:id?' element={<AnimeCardDetails />} />
         </Route>
       </Routes>
